@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Yahoo Sports Soccer</string>
+
+    //Team list item
+    <string name="team_name">Team Name</string>
+    <string name="won">W</string>
+    <string name="loss">L</string>
+    <string name="draw">D</string>
+    <string name="win_percentage">Win %</string>
+    <string name="total">Total</string>
+
+    <string name="title_all_teams">Overall Standings</string>
+</resources>

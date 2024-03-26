@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="evenColor">#CDEAE7</color>
+    <color name="oddColor">#BBD6D3</color>
+    <color name="statsHeaderColor">#648381</color>
+    <color name="toolbarColor">#076976</color>
+    <color name="titleColor">#F7FAFA</color>
+</resources>

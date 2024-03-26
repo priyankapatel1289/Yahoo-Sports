@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.TeamDetailsFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutContainerHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/statsHeaderColor"
+        app:layout_constraintTop_toTopOf="@id/layoutContainerHeading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvTeamName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/team_name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_weight="5" />
+
+        <TextView
+            android:id="@+id/tvWinScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/won"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:id="@+id/tvLossScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/loss"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:id="@+id/tvDrawScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/draw"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:id="@+id/tvWinPercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTeamDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:padding="5dp"
+        android:background="@color/evenColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutContainerHeading" />
+</androidx.constraintlayout.widget.ConstraintLayout>
